@@ -27,9 +27,14 @@ export class IndicatorDetailComponent implements OnInit {
   			if (data.unidad_medida.toLowerCase()  == "porcentaje") {
   				this.symb = "%"
   			}
-  			console.log(data);
-  		});
-  	});
+  		}, (err) => {
+      console.error(err)
+      console.log('Ocurrió un error');
+    });
+  	 }, (err) => {
+      console.error(err)
+      console.log('Ocurrió un error');
+  });
   }
 
 }

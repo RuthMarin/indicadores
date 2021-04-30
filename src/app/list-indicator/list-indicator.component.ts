@@ -50,7 +50,10 @@ export class ListIndicatorComponent implements OnInit {
 
   			}
   			
-  		});
+  		}, (err) => {
+      console.error(err)
+      console.log('Ocurrió un error');
+      });
   	});
    }
 }

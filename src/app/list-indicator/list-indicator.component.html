@@ -3,9 +3,9 @@
 	<div class="card-container" style="display: grid;" *ngIf="sucess">
     <div class="card" target="_blank" rel="noopener" >
       <p style="font-weight: bold; font-size: xx-large;color: blue"> {{symb}}{{property.valor}}</p>
-      <p style="font-weight: bold;"> Nombre: {{nombre}} </p>
-      <p style="font-weight: bold;"> Fecha: {{property.fecha}}</p>
-      <p style="font-weight: bold;"> Unidad de 	Medida: {{unidad}}</p>
+      <p style="font-weight: bold;"> Nombre: <input type="text" id="lname" name="lname" value = "{{nombre}}" style= "text-align: center" disabled></p>
+      <p style="font-weight: bold;"> Fecha: <input type="text" id="lname" name="lname" value = "{{property.fecha}}" style= "text-align: center" disabled></p>
+      <p style="font-weight: bold;"> Unidad de 	Medida: <input type="text" id="lname" name="lname" style= "text-align: center" value = "{{unidad}}" disabled></p>
    </div>
     
   </div> 

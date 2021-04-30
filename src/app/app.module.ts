@@ -13,7 +13,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ListIndicatorComponent } from './list-indicator/list-indicator.component';
 import { IndicatorComponent } from './indicator/indicator.component';
 import { IndicatorDetailComponent } from './indicator-detail/indicator-detail.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { IndicatorDetailComponent } from './indicator-detail/indicator-detail.co
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
    providers: [{
       provide: HTTP_INTERCEPTORS,

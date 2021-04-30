@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Service} from '../services/service';
-
+import { faCoffee, faInfoCircle, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-indicator',
@@ -8,6 +8,7 @@ import {Service} from '../services/service';
   styleUrls: ['./indicator.component.css']
 })
 export class IndicatorComponent implements OnInit {
+  faConfing = faInfoCircle;
   constructor(public service: Service) {}
   dataValues:any = []; //For values
   ngOnInit(): void {
@@ -22,7 +23,10 @@ export class IndicatorComponent implements OnInit {
   			}		    
 		 }
 		 console.log(this.dataValues)
- 	});
+ 	}, (err) => {
+	    console.error(err)
+	    console.log('Ocurrió un error');
+	});
 
   }
 
