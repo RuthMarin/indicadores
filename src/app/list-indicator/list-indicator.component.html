@@ -1,0 +1,18 @@
+<div class="content"></div>
+<div *ngFor="let property of dataValues" >
+	<div class="card-container" style="display: grid;" *ngIf="sucess">
+    <div class="card" target="_blank" rel="noopener" >
+      <p style="font-weight: bold; font-size: xx-large;color: blue"> {{symb}}{{property.valor}}</p>
+      <p style="font-weight: bold;"> Nombre: {{nombre}} </p>
+      <p style="font-weight: bold;"> Fecha: {{property.fecha}}</p>
+      <p style="font-weight: bold;"> Unidad de 	Medida: {{unidad}}</p>
+   </div>
+    
+  </div> 
+</div>
+
+<div class="card-container" style="display: grid;" *ngIf="!sucess">
+<div class="card" target="_blank" rel="noopener"  >
+  <p style="font-weight: bold;"> No hay datos</p>
+</div>	
+</div> 

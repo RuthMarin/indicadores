@@ -1,0 +1,9 @@
+<div *ngFor="let property of dataValues">
+	<div class="card-container" style="display: grid;">
+    <div class="card" target="_blank" rel="noopener" [routerLink]="['/indicator-detail', property.codigo]">
+      <span style="font-size: large;">{{property.nombre}}</span>
+       <p style="font-size:12px;color: green;font-weight: bold;">{{property.unidad_medida}}</p><br>
+       <button type="button" [routerLink]="['/list-indicator', property.codigo]" class="btn btn-primary">Ver Info</button>
+   </div>
+  </div> 
+</div>

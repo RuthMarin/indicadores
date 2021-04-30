@@ -1,0 +1,11 @@
+<div class="content">{{title}}</div>
+
+<div *ngFor="let property of dataValues">
+	<div class="card-container" style="display: grid;">
+    <div class="card" target="_blank" rel="noopener" >
+      <a>{{property.fecha}}</a>
+      <p style="font-weight: bold;"> {{symb}}{{property.valor}}</p>
+   </div>
+    
+  </div> 
+</div>
