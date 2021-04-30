@@ -7,7 +7,8 @@ import { IndicatorComponent } from './indicator/indicator.component';
 const routes: Routes = [
 	{ path: 'list-indicator/:id', component: ListIndicatorComponent },
 	{ path: 'indicator-detail/:id', component: IndicatorDetailComponent  },
-	{ path: 'indicator', component: IndicatorComponent }
+	{ path: 'indicator', component: IndicatorComponent },
+	{ path: '', component: IndicatorComponent }
 ];
 
 
